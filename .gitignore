@@ -1,0 +1,50 @@
+# ---- Build outputs ----
+kakuCH01/build/
+cachetest/build*/
+/cachetest/
+/build*/
+/dist/
+/release/
+.qt/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+.ninja_*
+*.obj
+*.o
+*.exe
+*.dll
+*.pdb
+*.gguf
+*.ggml
+*.user
+
+# ---- Bundled runtime + model weights (large, not source) ----
+Sakura_Launcher_GUI_v1.2.0/
+
+# ---- User data (downloaded novels, glossary, translations) ----
+save/
+
+# ---- 工作区根目录下的派生数据（saveRoot 为工作区根时产生） ----
+DOWNLOAD/
+CHDL/
+CJDL/
+OVERVIEW/
+COMMENTS/
+CACHE/
+/user/
+
+# ---- Test working directories ----
+historytest_work/
+murasakitest_work/
+/testDEMO/
+
+# ---- Local release tutorial ----
+/docs/
+
+# ---- UI demo (excluded from git) ----
+UIDEMO/
+
+# ---- Local verification artifacts ----
+/tests/compatibility/
+/PERFORMANCE_AUDIT.md

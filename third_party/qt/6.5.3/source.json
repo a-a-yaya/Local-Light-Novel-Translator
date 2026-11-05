@@ -1,0 +1,10 @@
+{
+  "qt_version": "6.5.3",
+  "source_filename": "qt-everywhere-src-6.5.3.tar.xz",
+  "source_bytes": 798402796,
+  "sha256": "7cda4d119aad27a3887329cfc285f2aba5da85601212bcb0aea27bd6b7b544cb",
+  "upstream_url": "https://download.qt.io/archive/qt/6.5/6.5.3/single/qt-everywhere-src-6.5.3.tar.xz",
+  "distribution_url": "https://github.com/a-a-yaya/Local-Light-Novel-Translator/releases/download/v1.0/qt-everywhere-src-6.5.3.tar.xz",
+  "kit": "Windows x86_64 MinGW 11.2 shared",
+  "project_qt_patches": []
+}

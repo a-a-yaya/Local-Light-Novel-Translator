@@ -1,0 +1,336 @@
+{
+  "qt_version": "6.5.3",
+  "kit": "Windows x86_64 MinGW 11.2 shared",
+  "files": [
+    {
+      "path": "iconengines/qsvgicon.dll",
+      "sha256": "25dd22c56a1caa93f489ab38ca4fbcd27075be939b2ac3c9cfddf8ee8c291cd8",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "imageformats/qgif.dll",
+      "sha256": "2c39a0a31dafa54214fdfddcdc1731fd16ba0aa72b60c55d3923bfb183cc4352",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "imageformats/qicns.dll",
+      "sha256": "c99740e12e486f59ff095e48cfc53c7b636b97ae630554adfafeb378bab739f4",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "imageformats/qico.dll",
+      "sha256": "31a8fa5f75c07408d2f4db8d5336e700f946c00602a9feb76f6bd8f092facb3d",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "imageformats/qjpeg.dll",
+      "sha256": "93959deff6242a13e88e5643827a04e9a24e5273d74f7063cf9d64eef80559a0",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "imageformats/qsvg.dll",
+      "sha256": "f61d164265a9db37faf278890e9f023b3dc0afb846b4f521004b57d2b6a27438",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "imageformats/qtga.dll",
+      "sha256": "e0d0f716b843990a0d2a99f01385e775a98481e4a19c685a7c87a692b44dec51",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "imageformats/qtiff.dll",
+      "sha256": "9c6d51bb37e1dc5243e8c54ef4257787095095cab1d81e246f5ebd4af2bf2ad7",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "imageformats/qwbmp.dll",
+      "sha256": "232a2d28ed5848263bfa4fc924609bc9fdb3283130d766c658102ae2be22c910",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "imageformats/qwebp.dll",
+      "sha256": "eb76ccaea0bba81422b4d5058627aaeedac00c94fa4cfee15b2b2c12785b0ee5",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "networkinformation/qnetworklistmanager.dll",
+      "sha256": "7e5732c65c698a0b4de7fab82a56ac8d3567d488198a8fecc40b35a2551a1711",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "platforms/qwindows.dll",
+      "sha256": "6729cc9c817e3fac8074a42fde37e78560898348d6a5cf6909e747623ea55944",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/Qt/labs/folderlistmodel/qmlfolderlistmodelplugin.dll",
+      "sha256": "b734c25c04926ddc95a1d79d4dc288bfcb5d9fd5a21a8fe87700554295ae33bc",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/Qt/labs/settings/qmlsettingsplugin.dll",
+      "sha256": "7e13b4778b929f87a25638df8c21fd5e89a43dda0939441911c8c400dc51f6a0",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/Qt5Compat/GraphicalEffects/private/qtgraphicaleffectsprivateplugin.dll",
+      "sha256": "10dbd541436454928caab8f7ad76190bc40bd352a2a8033dc7658a8962afeb18",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/Qt5Compat/GraphicalEffects/qtgraphicaleffectsplugin.dll",
+      "sha256": "b682924c6dede60c3791f004d25824546a53e8dd713171431bd3bdcb2ccca6cd",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQml/Base/qmlplugin.dll",
+      "sha256": "0ea4b7d27dac59fa755d73b4424b2d93b840d10ec327d453f8c7969e453d08fd",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQml/Models/modelsplugin.dll",
+      "sha256": "4f64f9752bd9c0a155592b5f14b32a1f3d91b9d3ce685bf9e2a42cf947b84be1",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQml/qmlmetaplugin.dll",
+      "sha256": "e64ce87aa11d3cbb66119da8e670f490822265871f5fdd35a21bf2d3de6cec70",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQml/WorkerScript/workerscriptplugin.dll",
+      "sha256": "287568ed87a4e916a1ee158b15a2dd8bf165caea4351767a8cc3e7b6d871a932",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Controls/Basic/impl/qtquickcontrols2basicstyleimplplugin.dll",
+      "sha256": "77e004672636a1535765decbbd98e728f0b4af05988a11a0ba582863ee5ffdc7",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Controls/Basic/qtquickcontrols2basicstyleplugin.dll",
+      "sha256": "7157331ff5d6ff6565adff81041ecdd6d5e1d93e932bf700ee6c57336732c589",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Controls/Fusion/impl/qtquickcontrols2fusionstyleimplplugin.dll",
+      "sha256": "99a03381789bdb74115d1db37f4e8956bf8aa2c72a4ff71ce358c2bb094648e5",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Controls/Fusion/qtquickcontrols2fusionstyleplugin.dll",
+      "sha256": "4c577c50f795ea2bef2e0c67e53837bd0a3e23c11ed9fc4405d1b7d80fa76ac1",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Controls/Imagine/impl/qtquickcontrols2imaginestyleimplplugin.dll",
+      "sha256": "a696589db867b0f2770e4dee0e327f2a5b72bbaf71ab2127c595b74595a944bc",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Controls/Imagine/qtquickcontrols2imaginestyleplugin.dll",
+      "sha256": "b61fa19c6f4d35088a4b307d42683924e094a6c20bed16f31e134aa6c0f471c5",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Controls/impl/qtquickcontrols2implplugin.dll",
+      "sha256": "698f4e66a29f936f09702b6754ccc223f3c57f90ff2b65e13799cd62d40ac926",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Controls/Material/impl/qtquickcontrols2materialstyleimplplugin.dll",
+      "sha256": "42e8951df9879884466bf1dacb1091a7098c1950d9c6835a883305db8c2057a7",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Controls/Material/qtquickcontrols2materialstyleplugin.dll",
+      "sha256": "26470469b8f5408530aeaef169eed7d566f26102fae1dca0cccd1d1bbb7070db",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Controls/qtquickcontrols2plugin.dll",
+      "sha256": "44f2d45f43d193af3d0e02dc75cda68e218b0934c1ecc9c035095e527b1074d1",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Controls/Universal/impl/qtquickcontrols2universalstyleimplplugin.dll",
+      "sha256": "1b15e6c618e9c0009227a17088797ea6aa8051db19cf5baea564180cce0feebe",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Controls/Universal/qtquickcontrols2universalstyleplugin.dll",
+      "sha256": "0f47a6c08b14b6a6259cefca21f451bba8c4826381815d45332320ef13683890",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Controls/Windows/qtquickcontrols2windowsstyleplugin.dll",
+      "sha256": "e471645015f353ab6ed5e8a07c3d3c0cad47c903be54b2ca3f7339b1559c59df",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Dialogs/qtquickdialogsplugin.dll",
+      "sha256": "36cdd95b8625bc1bb46d0a488db9456842fac7b09860aa15e64b5e484a8e9f24",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Dialogs/quickimpl/qtquickdialogs2quickimplplugin.dll",
+      "sha256": "cf7ce7d117102ce03dbe1faf9ed27d6473ec74c03c2d1093463677adc92380bd",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Effects/effectsplugin.dll",
+      "sha256": "6df7282385344e9e5d625726fe1d7ea625f6bfc19755cbb9e6cc6ebad3e9460f",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Layouts/qquicklayoutsplugin.dll",
+      "sha256": "e8559541e98716c28cafd1cfb605173d809a6b404922473e0487a94bf50fb2df",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/NativeStyle/qtquickcontrols2nativestyleplugin.dll",
+      "sha256": "86eba71672aff91993bbb906d9377f6aa48da165cbe1d5963726cde7780dc374",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/qtquick2plugin.dll",
+      "sha256": "a824b1eb15aaba67646cfb2244793c00818a24ab45a0dfebbe20d3f827ef0d0f",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Shapes/qmlshapesplugin.dll",
+      "sha256": "493e00b45ab4f376ebc5cf65cf5604f9e4458c2b8b34c126e5c5ad01f8906e70",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Templates/qtquicktemplates2plugin.dll",
+      "sha256": "9bfe59de340c246180b7ecf6d35356b026f8acbc98ffc630549ee445920e1faa",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "qml/QtQuick/Window/quickwindowplugin.dll",
+      "sha256": "5270adb5e859a4034ff81c4255b37cb830e4b101fa9d53d896afaaf76af115ca",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6Core.dll",
+      "sha256": "926979cdafef6a4d13212357e52ed7789a1645a4ba5d5af306f860dde949dd97",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6Gui.dll",
+      "sha256": "7a55a42354175a42f4108e9c52f6942dc61cbb83be8a95cf2e3b1b8064b36064",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6LabsFolderListModel.dll",
+      "sha256": "2925a346d6ecc6717e877d76b65e5d2beae98c42f901f8e69249742405b746f8",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6LabsSettings.dll",
+      "sha256": "6f48f78f749917a1fd9af619e962d67732d4189204d1f576721b7ea37a79fa3f",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6Network.dll",
+      "sha256": "fd9d621900516fb8398824df23415224c3a63fcd74d23f6840a5e8fa08379967",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6OpenGL.dll",
+      "sha256": "f478dd354866b18f5512b53d61a28c56d8950a91a5fac78575f9bd1ef12d5cc8",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6Qml.dll",
+      "sha256": "8ed13f09c44e4f6fe2d4a18a2492e22d06342ffcbd0dbbe2a1d5fefd14a99484",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6QmlModels.dll",
+      "sha256": "69d8217f4c963b38f51ca272f1bcc08ff6ed1d4e55290867de72b33e9882ce70",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6QmlWorkerScript.dll",
+      "sha256": "37016ffa6463480ac9d44856b0ecb99e8d96c3002167c2e2dad3e51eeb29a1d7",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6Quick.dll",
+      "sha256": "9820ca5e85b6c01cf3cf8b1d87f0794d0381594fe53a51f8827bc9af53c7fc5b",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6QuickControls2.dll",
+      "sha256": "23e16ce8f269ef66b19212a78262509507b81a6395c69fbb4e7846573d6ed6e1",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6QuickControls2Impl.dll",
+      "sha256": "50d496107010b4b67f7809c302fb1f6736439a2bce97d3335e7c2362b9156a79",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6QuickDialogs2.dll",
+      "sha256": "b148b6df923b43862ec82d12b49fe2c34d99e17cb08ec1360b48483d78656da9",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6QuickDialogs2QuickImpl.dll",
+      "sha256": "432d66274a6602bd3e4f7e95a6fbe039d8a402902b07e1e1ccb7e23229984419",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6QuickDialogs2Utils.dll",
+      "sha256": "2515c44a5e34236ba02ab2730b60ef9570ae53e574dff3bbf46f97457235386a",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6QuickEffects.dll",
+      "sha256": "653fc975ad7c512f7dd870fe0e2a01aa673ded8d91eaefe77ecee7d7226bf86f",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6QuickLayouts.dll",
+      "sha256": "800bb7244002833e6fb21244d8d0e7a6513af6ec7f6fd0d232ba551079acabfd",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6QuickShapes.dll",
+      "sha256": "c743b28ecf72cc1a850c648a436995aea93b3c75c058c50825dda2c37e664b08",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6QuickTemplates2.dll",
+      "sha256": "00d5436d7a9b0b121789948e364030e610eb242c27f327bda4ef7526744bec6c",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6ShaderTools.dll",
+      "sha256": "a976417af70035eeafae5b923ca3e619b2de6882040794cb8e6ca9cc4f13e0fc",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "Qt6Svg.dll",
+      "sha256": "2f01509421dad69171efe03d2bc87222baea00419d295a0ad4606966c74ffea8",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "tls/qcertonlybackend.dll",
+      "sha256": "31779c8b02dcdcb4fbce6e0316bd54f61f55ffd69b58a743a8653db4f8301647",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "tls/qopensslbackend.dll",
+      "sha256": "fc64b9b137fb5b10565167a0420d52ffe8bcc3002a4d65715ac85134ee44b1e4",
+      "matches_installed_qt_kit": true
+    },
+    {
+      "path": "tls/qschannelbackend.dll",
+      "sha256": "937651100b51a15517807ffd9186c8139f74782101484fa21e27348d77045bc5",
+      "matches_installed_qt_kit": true
+    }
+  ]
+}
