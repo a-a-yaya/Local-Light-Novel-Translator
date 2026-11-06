@@ -1,5 +1,6 @@
 #include "controllers/AppController.h"
 #include "modelgpuconfig.h"
+#include "serverexecutable.h"
 #include <QThread>
 #include <memory>
 #include "novelpaths.h"
@@ -128,11 +129,19 @@ AppController::AppController(QObject *parent)
     if (m_saveRoot.isEmpty())
         m_saveRoot = defaultSaveRoot();
     m_generateBilingual = settings.value(QStringLiteral("paths/generateBilingual"), false).toBool();
-    m_sakuraDir = settings.value(QStringLiteral("paths/sakuraDir"),
-                                 root + QStringLiteral("/Sakura_Launcher_GUI_v1.2.0")).toString();
+    m_sakuraDir = settings.value(
+        QStringLiteral("paths/sakuraDir"),
+        root + QStringLiteral("/Sakura_Launcher_GUI_v1.2.0")).toString();
     m_modelDir = settings.value(QStringLiteral("paths/modelDir"), m_sakuraDir).toString();
-    m_murasakiDir = settings.value(QStringLiteral("paths/murasakiDir"), m_sakuraDir).toString();
-    m_qwenDir = settings.value(QStringLiteral("paths/qwenDir"), m_sakuraDir).toString();
+    // Older builds only saved the model directory. Recover the launcher
+    // directory from it so set up done through the visible settings still works.
+    m_sakuraDir = ServerExecutable::preferredLauncherDir(m_sakuraDir, m_modelDir);
+    m_murasakiDir = ServerExecutable::preferredLauncherDir(
+        settings.value(QStringLiteral("paths/murasakiDir"), m_sakuraDir).toString(),
+        m_modelDir);
+    m_qwenDir = ServerExecutable::preferredLauncherDir(
+        settings.value(QStringLiteral("paths/qwenDir"), m_sakuraDir).toString(),
+        m_modelDir);
 
     m_sakura->setSakuraDir(m_sakuraDir);
     m_sakura->setModelDir(m_modelDir);
@@ -312,15 +321,31 @@ void AppController::setModelDir(const QString &dir)
 {
     if (dir.trimmed().isEmpty())
         return;
-    m_modelDir = dir;
+    const QString modelDir = QDir::cleanPath(dir.trimmed());
+    m_modelDir = modelDir;
     QSettings settings;
-    settings.setValue(QStringLiteral("paths/modelDir"), dir);
-    m_sakura->setModelDir(dir);
+    settings.setValue(QStringLiteral("paths/modelDir"), modelDir);
+    m_sakura->setModelDir(modelDir);
     m_sakura->setModelPath(m_sakura->bestModelPath());
-    m_murasaki->setModelDir(dir);
+    m_murasaki->setModelDir(modelDir);
     m_murasaki->setModelPath(m_murasaki->bestModelPath());
-    m_qwen->setModelDir(dir);
+    m_qwen->setModelDir(modelDir);
     m_qwen->setModelPath(m_qwen->bestModelPath());
+
+    // The settings page exposes one model directory. If that directory also
+    // contains the llama runtime, use it for all engines instead of retaining
+    // an obsolete default from the previous launch.
+    if (!ServerExecutable::locate(modelDir).isEmpty()) {
+        m_sakuraDir = modelDir;
+        m_murasakiDir = modelDir;
+        m_qwenDir = modelDir;
+        settings.setValue(QStringLiteral("paths/sakuraDir"), modelDir);
+        settings.setValue(QStringLiteral("paths/murasakiDir"), modelDir);
+        settings.setValue(QStringLiteral("paths/qwenDir"), modelDir);
+        m_sakura->setSakuraDir(modelDir);
+        m_murasaki->setLauncherDir(modelDir);
+        m_qwen->setLauncherDir(modelDir);
+    }
     // 新目录选出的模型同时写回，避免重启后恢复仍存在的旧目录模型。
     settings.setValue(QStringLiteral("paths/sakuraModel"), m_sakura->modelPath());
     settings.setValue(QStringLiteral("paths/murasakiModel"), m_murasaki->modelPath());

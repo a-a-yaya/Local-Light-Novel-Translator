@@ -48,6 +48,8 @@ set(PROJECT_SOURCES
         murasakimanager.cpp
         qwenmanager.h
         qwenmanager.cpp
+        serverexecutable.h
+        serverexecutable.cpp
         modelgpuconfig.h
         modelgpuconfig.cpp
         qwentranslator.h

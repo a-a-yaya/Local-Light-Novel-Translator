@@ -1,5 +1,6 @@
 #include "murasakimanager.h"
 #include "modelgpuconfig.h"
+#include "serverexecutable.h"
 
 #include <QProcess>
 #include <QFileInfo>
@@ -144,7 +145,7 @@ void MurasakiManager::start()
     }
 
     m_process = new QProcess(this);
-    m_process->setWorkingDirectory(m_launcherDir);
+    m_process->setWorkingDirectory(QFileInfo(m_serverExe).absolutePath());
     connect(m_process, &QProcess::errorOccurred, this, &MurasakiManager::onProcessError);
     connect(m_process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
             this, [this](int code, QProcess::ExitStatus) { onProcessFinished(code); });
@@ -243,10 +244,8 @@ void MurasakiManager::onReadyReadStandardOutput()
 
 bool MurasakiManager::locateServerExe()
 {
-    if (m_launcherDir.isEmpty())
-        return false;
-    m_serverExe = m_launcherDir + QStringLiteral("/llama/llama-server.exe");
-    return QFileInfo::exists(m_serverExe);
+    m_serverExe = ServerExecutable::locate(m_launcherDir, m_modelDir);
+    return !m_serverExe.isEmpty();
 }
 
 void MurasakiManager::setupKillOnClose()

@@ -1,5 +1,6 @@
 #include "sakuramanager.h"
 #include "modelgpuconfig.h"
+#include "serverexecutable.h"
 
 #include <QProcess>
 #include <QFile>
@@ -153,7 +154,7 @@ void SakuraManager::start()
     }
 
     m_process = new QProcess(this);
-    m_process->setWorkingDirectory(m_sakuraDir);
+    m_process->setWorkingDirectory(QFileInfo(m_serverExe).absolutePath());
     connect(m_process, &QProcess::errorOccurred, this, &SakuraManager::onProcessError);
     connect(m_process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
             this, [this](int code, QProcess::ExitStatus) { onProcessFinished(code); });
@@ -235,14 +236,14 @@ void SakuraManager::onReadyReadStandardOutput()
 
 bool SakuraManager::locateServerExe()
 {
-    if (m_sakuraDir.isEmpty())
+    m_serverExe = ServerExecutable::locate(m_sakuraDir, m_modelDir);
+    if (m_serverExe.isEmpty())
         return false;
 
-    m_serverExe = m_sakuraDir + QStringLiteral("/llama/llama-server.exe");
-    if (!QFileInfo::exists(m_serverExe))
-        return false;
-
-    m_configPath = m_sakuraDir + QStringLiteral("/sakura-launcher_config.json");
+    QDir launcherRoot = QFileInfo(m_serverExe).absoluteDir();
+    if (launcherRoot.dirName().compare(QStringLiteral("llama"), Qt::CaseInsensitive) == 0)
+        launcherRoot.cdUp();
+    m_configPath = launcherRoot.filePath(QStringLiteral("sakura-launcher_config.json"));
     return true;
 }
 
